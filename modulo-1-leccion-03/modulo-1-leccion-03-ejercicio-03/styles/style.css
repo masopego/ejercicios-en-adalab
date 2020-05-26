@@ -1,0 +1,16 @@
+.square {
+  height: 100px;
+  width: 100px;
+}
+
+.square.square--image {
+  display: inline-block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 10px;
+}
+
+.square--p {
+  display: inline-block;
+  text-align: justify;
+}

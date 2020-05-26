@@ -1,0 +1,52 @@
+:root {
+  --default-padding: 20px;
+  --default-margin: 0;
+  --main-color: grey;
+  --secundary-color: pink;
+}
+
+body {
+  margin: var(--default-margin);
+}
+
+header {
+  background-color: #eaeaea;
+  padding: var(--default-padding);
+}
+
+main {
+  padding: var(--default-padding);
+}
+
+p {
+  width: 50%;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.title {
+  color: var(--secundary-color);
+  margin: var(--default-margin);
+}
+
+.subtitle {
+  color: var(--secundary-color);
+  margin: var(--default-margin);
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+p a {
+  color: var(--main-color);
+}

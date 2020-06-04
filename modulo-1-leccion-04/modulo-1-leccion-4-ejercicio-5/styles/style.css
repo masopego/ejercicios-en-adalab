@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.header {
+  background-color: pink;
+  flex-basis: 150px;
+  max-height: 10%;
+}
+
+.main {
+  background-color: plum;
+  flex-basis: 800px;
+  max-height: 80%;
+}
+
+.footer {
+  background-color: yellowgreen;
+  flex-basis: 150px;
+  max-height: 10%;
+}
+
+header,
+main,
+footer {
+  padding: 20px;
+}

@@ -1,0 +1,15 @@
+.container ul {
+  height: 100px;
+  display: flex;
+  width: 700px;
+  background-color: pink;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.item {
+  list-style: none;
+}

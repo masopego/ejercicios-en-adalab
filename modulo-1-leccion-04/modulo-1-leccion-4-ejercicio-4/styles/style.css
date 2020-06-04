@@ -1,0 +1,22 @@
+.container {
+  border: 2px dashed pink;
+  height: 1500px;
+  width: 700px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: space-around;
+}
+
+.item {
+  border: 1px solid aquamarine;
+  width: 45%;
+  padding: 10px;
+}
+
+.item.item-5 {
+  order: -1;
+  width: 95%;
+}

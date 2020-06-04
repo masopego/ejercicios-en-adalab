@@ -1,0 +1,8 @@
+.menu-list {
+  background-color: pink;
+}
+.menu-list li {
+  font-size: 12px;
+  display: inline;
+  list-style-type: none;
+}

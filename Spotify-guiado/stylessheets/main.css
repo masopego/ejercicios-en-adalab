@@ -1,17 +1,12 @@
-.header,
-.main,
-.footer {
-  border: 1px solid red;
-}
-
 * {
   box-sizing: border-box;
   color: inherit;
   text-decoration: none;
+  margin: 0;
 }
 
 @font-face {
-  font-family: Circular;
+  font-family: "Circular";
   src: url("http://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-light.woff2")
       format("woff2"),
     url("http://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-light.woff")
@@ -22,7 +17,7 @@
 }
 
 @font-face {
-  font-family: Circular;
+  font-family: "Circular";
   src: url("http://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-light.woff2")
       format("woff2"),
     url("http://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-light.woff")
@@ -40,7 +35,7 @@
   --tertiary-color: #0691ff;
 
   /*FONTS*/
-  --primary-font: Circular, Arial, Helvetica, sans-serif;
+  --primary-font: "Circular", Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -80,10 +75,11 @@ html {
 
 .header-mobile-button {
   display: block;
-  background-image: url();
+  background-image: url("images/");
   background-size: 100%;
   width: 20 px;
   height: 20px;
+  z-index: 999;
 }
 
 .header-menu {
@@ -99,7 +95,7 @@ html {
 
 .header-menu li a {
   padding: 15px;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .header-menu li:nth-child(3):after {
@@ -117,6 +113,30 @@ html {
   height: 50vh;
 }
 
+/* OPTIONS */
+
+.options {
+  text-align: center;
+}
+
+.options-items {
+  display: flex;
+  flex-direction: column;
+}
+.option {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.option-image {
+  flex-shrink: 0;
+}
+
+.option-image img {
+  width: 100%;
+  max-width: 180px;
+}
+
 @media all and (min-width: 768px) {
   .header-menu {
     display: block;
@@ -126,9 +146,19 @@ html {
     display: none;
   }
 
-  .hero .wrapper {
+  .wrapper {
     background-image: url("../images/premium_dancer.png") no-repeat;
     background-position: right top;
+    z-index: 999;
+  }
+
+  .options-items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .option {
+    width: 50%;
   }
 }
 
@@ -139,5 +169,13 @@ html {
 
   .header-mobile-button {
     display: none;
+  }
+
+  .options-items {
+    text-align: center;
+  }
+  .option {
+    width: 25%;
+    flex-direction: column;
   }
 }

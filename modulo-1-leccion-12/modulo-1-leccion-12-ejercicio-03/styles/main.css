@@ -1,0 +1,34 @@
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat (12, 1fr);
+  grid-template-rows: 20vh 60vh 20vh;
+}
+
+.wrapper .item {
+  color: #fdfd96;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.wrapper .item1 {
+  background-color: pink;
+  grid-column: 1/13;
+}
+
+.wrapper .item2 {
+  background-color: #c84efb;
+  grid-column: 1/5;
+}
+
+.wrapper .item3 {
+  background-color: #fda88b;
+  grid-column: 5/13;
+}
+
+.wrapper .item4 {
+  background-color: #c5f6fe;
+  grid-column: 1/13;
+}

@@ -1,0 +1,27 @@
+.container-fluid {
+  height: 100vh;
+}
+
+.row > div {
+  color: #fdfd96;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.header {
+  background-color: pink;
+}
+
+.menu {
+  background-color: #c84efb;
+}
+
+.content {
+  background-color: #fda88b;
+}
+
+.footer {
+  background-color: #c5f6fe;
+}

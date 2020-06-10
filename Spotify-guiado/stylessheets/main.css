@@ -7,22 +7,20 @@
 
 @font-face {
   font-family: "Circular";
-  src: url("http://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-light.woff2")
+  src: url("https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-light.woff2")
       format("woff2"),
-    url("http://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-light.woff")
+    url("https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-light.woff")
       format("woff");
-
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Circular";
-  src: url("http://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-light.woff2")
+  src: url("https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-black.woff2")
       format("woff2"),
-    url("http://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-light.woff")
+    url("https://sp-bootstrap.global.ssl.fastly.net/8.12.1/fonts/circular-black.woff")
       format("woff");
-
   font-weight: 900;
   font-style: normal;
 }
@@ -33,7 +31,6 @@
   --secondary-color: #4bb84a;
   --light-color: white;
   --tertiary-color: #0691ff;
-
   /*FONTS*/
   --primary-font: "Circular", Arial, Helvetica, sans-serif;
 }
@@ -47,11 +44,10 @@ html {
   max-width: 1200px;
   margin: auto;
   width: 100%;
-  border: 1px solid yellow;
   padding: 15px;
 }
 
-/*HEADER*/
+/* HEADER */
 
 .header {
   background-color: var(--primary-color);
@@ -64,7 +60,7 @@ html {
   align-items: center;
 }
 
-.header .header-logo {
+.header-logo {
   display: inline-block;
   width: 115px;
 }
@@ -75,14 +71,14 @@ html {
 
 .header-mobile-button {
   display: block;
-  background-image: url("images/");
+  background-image: url("../images/menu-icon.png");
   background-size: 100%;
-  width: 20 px;
+  width: 20px;
   height: 20px;
-  z-index: 999;
 }
 
 .header-menu {
+  list-style-type: none;
   padding: 0;
   color: var(--light-color);
   display: none;
@@ -90,12 +86,20 @@ html {
 
 .header-menu li {
   display: inline-block;
-  list-style-type: none;
 }
 
 .header-menu li a {
   padding: 15px;
   font-weight: 900;
+  -webkit-transition: color 1s ease;
+  -moz-transition: color 1s ease;
+  -ms-transition: color 1s ease;
+  -o-transition: color 1s ease;
+  transition: color 1s ease;
+}
+
+.header-menu li a:hover {
+  color: var(--secondary-color);
 }
 
 .header-menu li:nth-child(3):after {
@@ -113,10 +117,43 @@ html {
   height: 50vh;
 }
 
+.title {
+  font-size: 3rem;
+}
+
+.title span {
+  display: inline-block;
+}
+
+.button {
+  background-color: var(--secondary-color);
+  display: inline-block;
+  padding: 15px;
+  border-radius: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  min-width: 200px;
+  letter-spacing: 2px;
+  -webkit-transition: background-color 1s linear;
+  -moz-transition: background-color 1s linear;
+  -ms-transition: background-color 1s linear;
+  -o-transition: background-color 1s linear;
+  transition: background-color 1s linear;
+}
+
+.button:hover {
+  background-color: var(--primary-color);
+}
+
 /* OPTIONS */
 
 .options {
   text-align: center;
+}
+
+.seconday-title {
+  font-size: 2rem;
 }
 
 .options-items {
@@ -137,6 +174,42 @@ html {
   max-width: 180px;
 }
 
+/* FOOTER */
+
+.footer {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding-top: 20px;
+}
+
+.footer .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer .wrapper nav {
+  grid-column: span 2;
+  padding-top: 15px;
+}
+
+.footer-menu li {
+  display: inline;
+}
+
+.footer-menu li a {
+  padding: 5px;
+}
+
+.footer-menu li:last-child {
+  display: block;
+  width: 100%;
+}
+
+.copy span {
+  display: block;
+  text-align: right;
+}
+
 @media all and (min-width: 768px) {
   .header-menu {
     display: block;
@@ -146,10 +219,24 @@ html {
     display: none;
   }
 
-  .wrapper {
+  .hero .wrapper {
     background-image: url("../images/premium_dancer.png") no-repeat;
     background-position: right top;
+    background-size: 50%;
     z-index: 999;
+    animation-name: intro;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+  }
+
+  @keyframes intro {
+    from {
+      background-size: 60%;
+    }
+    to {
+      background-size: 50%;
+    }
   }
 
   .options-items {
@@ -159,6 +246,17 @@ html {
   }
   .option {
     width: 50%;
+  }
+
+  .footer-menu li:last-child {
+    display: inline;
+    width: auto;
+  }
+}
+
+@media all and (min-width: 768px) and (orentation: portrait) {
+  .hero .wrapper {
+    background-position: right bottom;
   }
 }
 

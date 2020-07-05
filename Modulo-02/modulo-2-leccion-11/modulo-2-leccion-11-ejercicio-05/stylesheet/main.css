@@ -1,0 +1,9 @@
+.light-container {
+  background-color: lightblue;
+  color: darkblue;
+}
+
+.dark-container {
+  color: lightblue;
+  background-color: rgb(217, 217, 241);
+}

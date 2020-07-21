@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  color: grey;
+  font-size: 14px;
+}
+
+.App {
+  background-color: grey;
+  margin: 100px auto;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+.App__container {
+  padding: 20px 15px;
+  margin: 15px;
+  background-color: white;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.container__logo {
+  width: 100px;
+}
+
+.App-logo {
+  width: 100%;
+}
+
+.header__text {
+  line-height: 10px;
+}
+.title {
+  font-size: 20px;
+}
+
+.container__comments {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-heart.active {
+  color: red;
+}

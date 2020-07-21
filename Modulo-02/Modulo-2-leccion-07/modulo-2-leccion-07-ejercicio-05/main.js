@@ -20,6 +20,8 @@ let numbers = [
   10,
   9.6,
   5.4,
+  9.3,
+  8.2,
 ];
 
 const numberofSubjects = numbers.length;

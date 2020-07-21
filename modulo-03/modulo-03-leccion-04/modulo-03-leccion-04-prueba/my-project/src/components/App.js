@@ -1,5 +1,5 @@
 import React from 'react';
-import ItemList from './ItemList';
+import PropTypes from 'prop-types';
 import '../App.css';
 
 class App extends React.Component {

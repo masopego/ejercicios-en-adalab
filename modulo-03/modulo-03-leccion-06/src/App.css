@@ -1,0 +1,9 @@
+.color__container {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+
+.active {
+  background-color: red;
+}

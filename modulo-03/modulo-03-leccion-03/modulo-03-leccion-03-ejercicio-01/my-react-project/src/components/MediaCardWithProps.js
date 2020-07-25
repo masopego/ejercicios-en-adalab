@@ -18,7 +18,8 @@ class MediaCardWithProps extends React.Component {
           <div className="container__comments">
             <p>Leer más...</p>
             <p className="number__text">
-              {this.props.likes} <i class={'fas fa-heart ' + classHeart}></i>
+              {this.props.likes}{' '}
+              <i className={'fas fa-heart ' + classHeart}></i>
             </p>
           </div>
         </div>

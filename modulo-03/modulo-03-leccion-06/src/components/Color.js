@@ -5,7 +5,7 @@ class Color extends React.Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
     this.state = {
-      initialColor: true,
+      initialColor: false,
     };
   }
   handleClick(ev) {
@@ -19,7 +19,7 @@ class Color extends React.Component {
     return (
       <div
         className={`color__container ${
-          this.state.initialColor ? 'active' : ''
+          this.state.initialColor ? '' : 'active'
         }`}
         onClick={this.handleClick}
       >

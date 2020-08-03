@@ -1,0 +1,7 @@
+.collapsable-content {
+  display: none;
+}
+
+.collapsable-content--open {
+  display: block;
+}
